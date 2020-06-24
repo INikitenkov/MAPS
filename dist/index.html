@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>#map{
+        height: 400px;
+        width: 100%;
+      }</style>
   </head>
   <body>
+    <div id="map"></div>
+   <script>function initMap() {
+  var opt = {
+    center: {
+      lat: 43.2478678,
+      lng: 76.8650439
+    },
+    zoom: 20
+  };
+  var map = new google.maps.Map(document.getElementById("map"), opt);
+}</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3NB3PHT97taGDcdcgJuepVdz5e4OvzYQ&callback=initMap" async="" defer=""></script>
     <script src="/src.f10117fe.js"></script>
   </body>
 </html>
